@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/myInfo/main",
+    "pages/counter/main",
+    "pages/login/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#febd00",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/main",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/counter/main",
+      "text": "内容"
+    }, {
+      "pagePath": "pages/myInfo/main",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
