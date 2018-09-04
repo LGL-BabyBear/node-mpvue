@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import {API} from '../../../static/api'
+import {API} from '../../../static/api';
 
 export default {
   data () {
@@ -37,14 +37,14 @@ export default {
   },
   methods: {
     bindViewTap () {
-      const url = '../myInfo/main'
+      const url = '../myInfo/main';
       wx.navigateTo({ url })
     },
     userNameBlur () {
-      console.log(111111, this.userName)
+      console.log(111111, this.userName);
     },
     passBlur () {
-      console.log(222222222, this.password)
+      console.log(222222222, this.password);
     },
     submitSys () {
       wx.request({
@@ -60,17 +60,17 @@ export default {
           password: this.password
         },
         success: function (res) {
-          console.log('成功了', res)
+          console.log('成功了', res);
         },
         fail: function (res) {
-          console.log('登陆失败，源有：', res)
+          console.log('登陆失败，源有：', res);
         }
       })
     }
   },
   beforeMount () {
     // 调用应用实例的方法获取全局数据
-    console.log('界面没有正常显示为何')
+    console.log('界面没有正常显示为何');
   }
 }
 </script>

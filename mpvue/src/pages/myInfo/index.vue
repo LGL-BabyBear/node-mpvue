@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import {API} from '../../../static/api'
+import {API} from '../../../static/api';
 
 export default {
   components: {
@@ -38,15 +38,15 @@ export default {
 
   },
   beforeMount () {
-    console.log(API.openid)
-    const T = this
+    console.log(API.openid);
+    const T = this;
     wx.getStorage({
       key: 'userInfo',
       success: function (res) {
         if (res) {
-          T.myInfo = res.data
+          T.myInfo = res.data;
         }
-        console.log('显示我的信息', T.myInfo, res)
+        console.log('显示我的信息', T.myInfo, res);
       }
     })
   }
