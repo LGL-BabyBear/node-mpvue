@@ -24,7 +24,11 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'no-cond-assign': 1,
+    'comma-spacing': 1,
+    'semi': 0,
+    'semi-spacing': 0,
   },
   globals: {
     App: true,
@@ -32,6 +36,7 @@ module.exports = {
     wx: true,
     getApp: true,
     getPage: true,
-    requirePlugin: true
+    requirePlugin: true,
+    vue: true
   }
 }
